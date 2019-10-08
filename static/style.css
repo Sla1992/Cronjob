@@ -155,7 +155,7 @@ select{
 
 .Border4{
   width: 80%;
-  height: 200px;
+  height: 150px;
   border-color: lightgray;
   border-style: solid;
   border-width: 2px;
@@ -163,8 +163,37 @@ select{
   display: flex;
   flex-direction: column;
   padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 .Box4{
   display: flex;
+  flex-direction: column;
+  margin: 0px 20px 20px 20px;
+}
+
+.Border4 > p{
+  margin-left: 20px;
+}
+
+.Border5 {
+    width: 80%;
+    height: 65px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  margin-bottom: 20px;
+}
+
+.endtext{
+
+  width: 80%;
+}
+
+.cron-button > button {
+  padding: 5px 20px 5px 20px;
 }

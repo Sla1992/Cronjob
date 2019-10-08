@@ -32,22 +32,24 @@
 
             <div class="border2">
 
-                    <div class="Benutzer-box">
-                        <div class="Benutzername-text">Benutzername</div>
-                        <input class="username" type="text" id="name" name="name" required minlength="4" maxlength="20" size="50" placeholder="Geben Sie hier den Benutzernamen ein">
-                    </div>
+                <input type="checkbox" name="check4" value="Antworten speichern"> Antworten speichern
 
-                    <div class="Password-box">
-                        <div class="Password-text">Passwort</div>
-                        <input class="password" type="password" id="password" name="password" required minlength="4" maxlength="20" size="50" placeholder="Geben Sie hier den Passwort ein">
-                    </div>
+                <div class="Benutzer-box">
+                    <div class="Benutzername-text">Benutzername</div>
+                    <input class="username" type="text" id="name" name="name" required minlength="4" maxlength="20" size="50" placeholder="Geben Sie hier den Benutzernamen ein">
+                </div>
+
+                <div class="Password-box">
+                    <div class="Password-text">Passwort</div>
+                    <input class="password" type="password" id="password" name="password" required minlength="4" maxlength="20" size="50" placeholder="Geben Sie hier den Passwort ein">
+                </div>
 
 
             </div>
 
             <div class="Border3">
                 <div class="choose1">
-                    <input class="MyInput" type="radio" name="oneChoice">
+                    <input class="MyInput" type="radio" name="oneChoice" checked>
                         <p>Alle</p>
                         <select> name=minuten
                             <option value="15">15</option>
@@ -112,19 +114,30 @@
                 <div class="Border4">
                     <p> Mich per E-Mail benachrichtigen bei:</p>
                     <div class="Box4">
-                        <input type="checkbox" name="check1" value="Fehlschlag"> Fehlschlag des Jobs
-                        <input type="checkbox" name="check2" value="erfolgreich"> erfolgreichem Abruf nach vorherigem Fehlschlag
-                        <input type="checkbox" name="check3" value="automatische deaktivierung" checked> automatische Deaktivierung wegen zu vieler Fehlschläge
+
+                        <div class="check1">
+                             <input type="checkbox" name="check1" value="Fehlschlag"> Fehlschlag des Jobs
+                        </div>
+
+                        <div class="check2">
+                            <input type="checkbox" name="check2" value="erfolgreich"> erfolgreichem Abruf nach vorherigem Fehlschlag
+                        </div>
+
+                        <div class="check3">
+                            <input type="checkbox" name="check3" value="automatische deaktivierung" checked> automatische Deaktivierung wegen zu vieler Fehlschläge
+                        </div>
+
                     </div>
                 </div>
-                    <div class="Box5">
-                        <input type="checkbox" name="check4" value="Antworten speichern" checked> Antworten speichern
+                    <div class="Border5">
+                        <div class="check4">
+                            <input type="checkbox" name="check4" value="Antworten speichern"> Antworten speichern
+                        </div>
                     </div>
-
-                    <p> Mit der Erstellung des Cron-Jobs erklären Sie, dass Sie entweder der Inhaber der abzurufenden Webseite sind oder im Einverständnis des Inhabers handeln</p>
-
-                    <div class="box6">
-                            <button name="button">Cron-Job erstellen</button>
+                    <div class="endtext">
+                        <p> Mit der Erstellung des Cron-Jobs erklären Sie, dass Sie entweder der Inhaber der abzurufenden Webseite sind oder im Einverständnis des Inhabers handeln</p></div>
+                    <div class="cron-button">
+                        <button name="button">Cron-Job erstellen</button>
                     </div>
 
             </div>
