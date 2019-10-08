@@ -14,17 +14,118 @@
   </head>
   <body>
 
-  <div class="container">
-        <div class="Box1"><input type="text" id="name" name="name" required minlength="4" maxlength="20" size="50" placeholder="Titel"><input type="url" name="website" size="50" placeholder="http://"></div>
-        <div class="Box2"><input type="text" id="name" name="name" required minlength="4" maxlength="20" size="50" placeholder="Geben Sie hier den Benutzernamen ein"><input type="password" id="password" name="password" required minlength="4" maxlength="20" size="50" placeholder="Geben Sie hier den Passwort ein"></div>
-        <div class="Box3"><input type="radio" name="oneChoice"><input type="radio" name="oneChoice"><input type="radio" name="oneChoice"><input type="radio" name="oneChoice"></div>
-        <div class="Box4"><input type="checkbox" name="check1" value="Fehlschlag"> Fehlschlag des Jobs
-            <input type="checkbox" name="check2" value="erfolgreich"> erfolgreichem Abruf nach vorherigem Fehlschlag
-            <input type="checkbox" name="check3" value="automatische deaktivierung" checked> automatische Deaktivierung wegen zu vieler Fehlschläge
+  <form action="" method="post">
+
+      <div class="container">
+            <h1>Cron-Job erstellen</h1>
+            <p>Füllen Sie das folgende Formular aus, um einen Cron-Job anzulegen.
+                Es werden sowohl http- als auch https-URLs unterstützt. Falls die URL mit HTTP-Authentifizierung gesichert ist
+                (z.B ".htaccess"-Passwortschutz), hinterlegen Sie bitte auch die entsprechenden Zugangsdaten,
+                damit wir die Webseite korrekt abrufen können.
+            </p>
+            <div class="border1">
+                <div class="Box1">
+                    <input class="name" type="text" id="name" name="name" required minlength="4" maxlength="20" size="50" placeholder="Titel">
+                    <input class="url" type="url" name="website" size="50" placeholder="http://">
+                </div>
+            </div>
+
+            <div class="border2">
+
+                    <div class="Benutzer-box">
+                        <div class="Benutzername-text">Benutzername</div>
+                        <input class="username" type="text" id="name" name="name" required minlength="4" maxlength="20" size="50" placeholder="Geben Sie hier den Benutzernamen ein">
+                    </div>
+
+                    <div class="Password-box">
+                        <div class="Password-text">Passwort</div>
+                        <input class="password" type="password" id="password" name="password" required minlength="4" maxlength="20" size="50" placeholder="Geben Sie hier den Passwort ein">
+                    </div>
+
+
+            </div>
+
+            <div class="Border3">
+                <div class="choose1">
+                    <input type="radio" name="oneChoice">
+                        <p>Alle</p>
+                        <select> name=minuten
+                            <option value="15">15</option>
+                            <option value="30">30</option>
+                            <option value="45">45</option>
+                            <option value="60">60</option>
+                        </select>
+                    <p>Minuten</p>
+                </div>
+
+                <div class="choose2">
+                    <input type="radio" name="oneChoice">
+                    <p>Jeden Tag um </p>
+                    <select> name=Stunden
+                        <option value="00">00</option>
+                        <option value="06">06</option>
+                        <option value="12">12</option>
+                        <option value="18">18</option>
+                    </select>
+                    <p>:</p>
+
+                    <select> name=minuten2
+                        <option value="15">15</option>
+                        <option value="30">30</option>
+                        <option value="45">45</option>
+                        <option value="60">60</option>
+                    </select>
+                </div>
+
+                <div class="choose3">
+                    <input type="radio" name="oneChoice">
+                    <p>Immer am </p>
+                    <select> name=tage
+                        <option value="1">1</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                    </select>
+                    <p>des Monats um </p>
+                    <select> name=Stunden2
+                        <option value="00">00</option>
+                        <option value="06">06</option>
+                        <option value="12">12</option>
+                        <option value="18">18</option>
+                    </select>
+                    <p>:</p>
+                    <select> name=minuten3
+                        <option value="15">15</option>
+                        <option value="30">30</option>
+                        <option value="45">45</option>
+                        <option value="60">60</option>
+                    </select>
+                </div>
+
+                <div class="choose4">
+                        <input type="radio" name="oneChoice">
+                        <p>Benutzerdefiniert</p>
+                </div>
+            </div>
+
+            <p> Mich per E-Mail benachrichtigen bei:</p>
+            <div class="Box4">
+                <input type="checkbox" name="check1" value="Fehlschlag"> Fehlschlag des Jobs
+                <input type="checkbox" name="check2" value="erfolgreich"> erfolgreichem Abruf nach vorherigem Fehlschlag
+                <input type="checkbox" name="check3" value="automatische deaktivierung" checked> automatische Deaktivierung wegen zu vieler Fehlschläge
+            </div>
+
+            <div class="Box5">
+                <input type="checkbox" name="check4" value="Antworten speichern" checked> Antworten speichern
+            </div>
+            <p> Mit der Erstellung des Cron-Jobs erklären Sie, dass Sie entweder der Inhaber der abzurufenden Webseite sind oder im Einverständnis des Inhabers handeln</p>
+            <div class="box6">
+                <button name="button">Cron-Job erstellen</button>
+            </div>
         </div>
-        <div class="Box5"><input type="checkbox" name="check4" value="Antworten speichern" checked> Antworten speichern</div>
-        <div class="box6"><button name="button">Cron-Job erstellen</button></div>
-  </div>
+  </form>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
