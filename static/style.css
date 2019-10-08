@@ -78,9 +78,9 @@ html {
   display: flex;
   flex-direction: column;
   flex-flow: wrap;
-  margin-left: 20px;
   margin-right: 5px;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .Benutzername-text {
@@ -93,6 +93,7 @@ html {
   display: flex;
   margin-bottom: 5px;
   margin-top: 5px;
+
 }
 
 .Password-box {
@@ -100,7 +101,7 @@ html {
   flex-direction: column;
   flex-flow: wrap;
   margin-right: 20px;
-  margin-left: 5px;
+
   margin-bottom: 20px;
 }
 
@@ -113,39 +114,57 @@ html {
   border-radius: 7px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 10px;
-  justify-content: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 .choose1{
   display: flex;
   flex-direction: row;
-
+  margin-left: 20px;
 }
 
 .choose2{
   display: flex;
   flex-direction: row;
-
+  margin-left: 20px;
 }
 
 .choose3{
   display: flex;
   flex-direction: row;
-
+  margin-left: 20px;
 }
 
 .choose4{
   display: flex;
   flex-direction: row;
-
+  margin-left: 20px;
 }
 
 select{
   height: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-input{
-  margin: 6px 6px 6px 20px;
+.MyInput {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.Border4{
+  width: 80%;
+  height: 200px;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.Box4{
+  display: flex;
 }

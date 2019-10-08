@@ -47,7 +47,7 @@
 
             <div class="Border3">
                 <div class="choose1">
-                    <input type="radio" name="oneChoice">
+                    <input class="MyInput" type="radio" name="oneChoice">
                         <p>Alle</p>
                         <select> name=minuten
                             <option value="15">15</option>
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="choose2">
-                    <input type="radio" name="oneChoice">
+                    <input class="MyInput" type="radio" name="oneChoice">
                     <p>Jeden Tag um </p>
                     <select> name=Stunden
                         <option value="00">00</option>
@@ -78,7 +78,7 @@
                 </div>
 
                 <div class="choose3">
-                    <input type="radio" name="oneChoice">
+                    <input class="MyInput"  type="radio" name="oneChoice">
                     <p>Immer am </p>
                     <select> name=tage
                         <option value="1">1</option>
@@ -105,26 +105,29 @@
                 </div>
 
                 <div class="choose4">
-                        <input type="radio" name="oneChoice">
+                        <input class="MyInput" type="radio" name="oneChoice">
                         <p>Benutzerdefiniert</p>
                 </div>
             </div>
+                <div class="Border4">
+                    <p> Mich per E-Mail benachrichtigen bei:</p>
+                    <div class="Box4">
+                        <input type="checkbox" name="check1" value="Fehlschlag"> Fehlschlag des Jobs
+                        <input type="checkbox" name="check2" value="erfolgreich"> erfolgreichem Abruf nach vorherigem Fehlschlag
+                        <input type="checkbox" name="check3" value="automatische deaktivierung" checked> automatische Deaktivierung wegen zu vieler Fehlschläge
+                    </div>
+                </div>
+                    <div class="Box5">
+                        <input type="checkbox" name="check4" value="Antworten speichern" checked> Antworten speichern
+                    </div>
 
-            <p> Mich per E-Mail benachrichtigen bei:</p>
-            <div class="Box4">
-                <input type="checkbox" name="check1" value="Fehlschlag"> Fehlschlag des Jobs
-                <input type="checkbox" name="check2" value="erfolgreich"> erfolgreichem Abruf nach vorherigem Fehlschlag
-                <input type="checkbox" name="check3" value="automatische deaktivierung" checked> automatische Deaktivierung wegen zu vieler Fehlschläge
-            </div>
+                    <p> Mit der Erstellung des Cron-Jobs erklären Sie, dass Sie entweder der Inhaber der abzurufenden Webseite sind oder im Einverständnis des Inhabers handeln</p>
 
-            <div class="Box5">
-                <input type="checkbox" name="check4" value="Antworten speichern" checked> Antworten speichern
+                    <div class="box6">
+                            <button name="button">Cron-Job erstellen</button>
+                    </div>
+
             </div>
-            <p> Mit der Erstellung des Cron-Jobs erklären Sie, dass Sie entweder der Inhaber der abzurufenden Webseite sind oder im Einverständnis des Inhabers handeln</p>
-            <div class="box6">
-                <button name="button">Cron-Job erstellen</button>
-            </div>
-        </div>
   </form>
 
     <!-- Optional JavaScript -->
