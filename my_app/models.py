@@ -3,23 +3,31 @@ from django.contrib.auth.models import User
 
 
 class Cronjob(models.Model):
-    user = models.ForeignKey(User, null=False, on_delete=models.CASCADE, default='')
+    user = models.ForeignKey(User, null=False, on_delete=models.CASCADE, default='1')
 
     title = models.CharField(max_length=128, null=False, default='')
 
     url = models.URLField(max_length=255, null=False, default='')
 
-    authentification = models.BooleanField(default=False)
+    authentification = models.BooleanField(default=False, null=True)
 
-    username = models.CharField(max_length=30, null=False, default='')
+    username = models.CharField(max_length=30, null=True, default='')
 
-    password = models.CharField(max_length=30, null=False, default='')
+    password = models.CharField(max_length=30, null=True, default='')
 
-    auswahl = models.IntegerField(default='')
 
     def __str__(self):
         return self.title
 
+
+class Testjob(models.Model):
+
+    title = models.CharField(max_length=128, null=False, default='')
+
+    url = models.URLField(max_length=255, null=False, default='')
+
+    def __str__(self):
+        return self.title
 
 
 

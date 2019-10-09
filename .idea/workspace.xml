@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a774ff4f-fbf9-4088-bbcd-3d608b10d236" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my_app/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_app/migrations/0004_auto_20191009_1151.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_app/migrations/0005_auto_20191009_1258.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_app/tokens.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/cronjob.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/migrations/0006_testjob.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/migrations/0007_remove_cronjob_auswahl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/migrations/0008_auto_20191009_1647.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/migrations/0009_auto_20191009_1653.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hello/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hello/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hello/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hello/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/forms.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cronjob.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,6 +55,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
         <item name="my_app_cronjob: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="my_app_testjob: table" type="3d80ac25:SqliteImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -109,6 +115,9 @@
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Cronjob/venv/Lib/site-packages/django/contrib/admin/templates/admin/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Cronjob/templates/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Cronjob/venv/Lib/site-packages/django/contrib/admin/templates/admin/login.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -138,8 +147,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.login.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.base.html" />
+        <item itemvalue="JavaScript Debug.login.html" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -148,7 +158,17 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand />
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b3542907" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b3542907" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@27aa8d4" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
           <select />
         </treeState>
       </serviceView>
@@ -170,7 +190,7 @@
       <workItem from="1570518070622" duration="1563000" />
       <workItem from="1570519696633" duration="22077000" />
       <workItem from="1570562737408" duration="5972000" />
-      <workItem from="1570601480674" duration="14491000" />
+      <workItem from="1570601480674" duration="26467000" />
     </task>
     <task id="LOCAL-00001" summary="CommitForManu">
       <created>1570523742576</created>
