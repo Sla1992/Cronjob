@@ -11,12 +11,12 @@ html {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
+
 }
 
 .container{
   display: flex;
   flex-direction: column;
-
 }
 
 .name {
@@ -35,7 +35,7 @@ html {
 
 .border1{
   width: 80%;
-  height: 100px;
+  height: 90px;
   border-color: lightgray;
   border-style: solid;
   border-width: 2px;
@@ -43,7 +43,6 @@ html {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-
 }
 
 .Box1{
@@ -52,16 +51,24 @@ html {
   width: 95%;
 }
 
-.border2{
+#border2{
   width: 80%;
   height: 75px;
   border-color: lightgray;
   border-style: solid;
   border-width: 2px;
   border-radius: 7px;
-  display: flex;
+  display: none;
   flex-direction: row;
   margin-bottom: 20px;
+}
+
+.Authentifizierung{
+  display: flex;
+}
+
+.Auth-text{
+    margin-right: 5px;
 }
 
 .username{
@@ -74,6 +81,31 @@ html {
   width: 100%;
 }
 
+input#person.username{
+    background-image: url("/static/images/person.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: 16px;
+
+}
+
+input#person:focus{
+    background-image: none;
+    text-indent: 0px;
+}
+
+input#password.password{
+    background-image: url("/static/images/chain.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: 16px;
+}
+
+input#password:focus{
+    background-image: none;
+    text-indent: 0px;
+}
+
 .Benutzer-box {
   display: flex;
   flex-direction: column;
@@ -81,6 +113,8 @@ html {
   margin-right: 5px;
   margin-bottom: 20px;
   margin-left: 20px;
+  width: 50vw;
+
 }
 
 .Benutzername-text {
@@ -101,7 +135,7 @@ html {
   flex-direction: column;
   flex-flow: wrap;
   margin-right: 20px;
-
+  width: 50vw;
   margin-bottom: 20px;
 }
 
@@ -194,6 +228,72 @@ select{
   width: 80%;
 }
 
+.cron-button {
+
+    padding-bottom: 20px;
+}
 .cron-button > button {
   padding: 5px 20px 5px 20px;
 }
+
+/* Hier ist der Toggle Button
+-----------------------------
+*/
+
+.onoffswitch {
+    position: relative; width: 50px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    padding-top: 4px;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid lightgray; border-radius: 4px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 14px; padding: 0; line-height: 14px;
+    font-size: 10px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+
+}
+.onoffswitch-inner:before {
+    content: "An";
+    padding-left: 5px;
+    background-color: lightgreen; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "Aus";
+    padding-right: 5px;
+    background-color: #FFFFFF; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 10px; margin: 4px;
+    background: #FFFFFF;
+    height: 10px;
+    position: absolute; top: 0; bottom: 0;
+    right: 32px;
+    border: 2px solid lightgray; border-radius: 4px;
+    transition: all 0.3s ease-in 0s;
+    top:4px;
+
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+
+}
+
+
+
+

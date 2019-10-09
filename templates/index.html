@@ -21,27 +21,52 @@
             <p>Füllen Sie das folgende Formular aus, um einen Cron-Job anzulegen.
                 Es werden sowohl http- als auch https-URLs unterstützt. Falls die URL mit HTTP-Authentifizierung gesichert ist
                 (z.B ".htaccess"-Passwortschutz), hinterlegen Sie bitte auch die entsprechenden Zugangsdaten,
-                damit wir die Webseite korrekt abrufen können.
+                damit wir die Webseite korrekt abrufen können. <br><br>
+                <i>Hinweis: </i> Weitere erweiterte Einstellungen für Ihren Cron-Job können Sie nach dem Anlegen vornehmen, indem Sie den Job bearbeiten
             </p>
             <div class="border1">
                 <div class="Box1">
-                    <input class="name" type="text" id="name" name="name" required minlength="4" maxlength="20" size="50" placeholder="Titel">
-                    <input class="url" type="url" name="website" size="50" placeholder="http://">
+                    <input class="name" type="text" id="name" name="name" required minlength="4" maxlength="20" placeholder="Titel">
+                    <input class="url" type="url" name="website" placeholder="http://">
                 </div>
             </div>
 
-            <div class="border2">
+            <div class="Authentifizierung">
+                <div class="Auth-text">
+                    <p>Authentifizierung</p>
+                </div>
 
-                <input type="checkbox" name="check4" value="Antworten speichern"> Antworten speichern
+
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" onclick="showBorder()" class="onoffswitch-checkbox" id="myonoffswitch">
+                    <label class="onoffswitch-label" for="myonoffswitch">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>
+           </div>
+
+            <script>
+                function showBorder() {
+                    var x = document.getElementById("border2");
+                    if (x.style.display === "flex"){
+                            x.style.display = "none";
+                    } else {
+                        x.style.display = "flex";
+                    }
+                }
+            </script>
+
+            <div id="border2">
 
                 <div class="Benutzer-box">
                     <div class="Benutzername-text">Benutzername</div>
-                    <input class="username" type="text" id="name" name="name" required minlength="4" maxlength="20" size="50" placeholder="Geben Sie hier den Benutzernamen ein">
+                    <input class="username" type="text" id="person" name="name" required minlength="4" maxlength="20">
                 </div>
 
                 <div class="Password-box">
                     <div class="Password-text">Passwort</div>
-                    <input class="password" type="password" id="password" name="password" required minlength="4" maxlength="20" size="50" placeholder="Geben Sie hier den Passwort ein">
+                    <input class="password" type="password" id="password" name="password" required minlength="4" maxlength="20">
                 </div>
 
 
@@ -72,10 +97,10 @@
                     <p>:</p>
 
                     <select> name=minuten2
+                        <option value="00">00</option>
                         <option value="15">15</option>
                         <option value="30">30</option>
                         <option value="45">45</option>
-                        <option value="60">60</option>
                     </select>
                 </div>
 
@@ -99,10 +124,10 @@
                     </select>
                     <p>:</p>
                     <select> name=minuten3
+                        <option value="00">00</option>
                         <option value="15">15</option>
                         <option value="30">30</option>
                         <option value="45">45</option>
-                        <option value="60">60</option>
                     </select>
                 </div>
 
