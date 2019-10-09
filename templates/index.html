@@ -17,7 +17,10 @@
   <form action="" method="post">
 
       <div class="container">
-            <h1>Cron-Job erstellen</h1>
+          <div class="title">
+              <h1>Cron-Job erstellen</h1>
+          </div>
+
             <p>Füllen Sie das folgende Formular aus, um einen Cron-Job anzulegen.
                 Es werden sowohl http- als auch https-URLs unterstützt. Falls die URL mit HTTP-Authentifizierung gesichert ist
                 (z.B ".htaccess"-Passwortschutz), hinterlegen Sie bitte auch die entsprechenden Zugangsdaten,
@@ -76,59 +79,29 @@
                 <div class="choose1">
                     <input class="MyInput" type="radio" name="oneChoice" checked>
                         <p>Alle</p>
-                        <select> name=minuten
-                            <option value="15">15</option>
-                            <option value="30">30</option>
-                            <option value="45">45</option>
-                            <option value="60">60</option>
-                        </select>
-                    <p>Minuten</p>
+                        <input class="zahl" type="number" max="60" min="1" value="1">
+                    <p>Minute/n</p>
                 </div>
 
                 <div class="choose2">
                     <input class="MyInput" type="radio" name="oneChoice">
                     <p>Jeden Tag um </p>
-                    <select> name=Stunden
-                        <option value="00">00</option>
-                        <option value="06">06</option>
-                        <option value="12">12</option>
-                        <option value="18">18</option>
-                    </select>
+                    <input class="zahl" type="number" max="23" min="1" value="00">
                     <p>:</p>
 
-                    <select> name=minuten2
-                        <option value="00">00</option>
-                        <option value="15">15</option>
-                        <option value="30">30</option>
-                        <option value="45">45</option>
-                    </select>
+                    <input class="zahl" type="number" max="59" min="1" value="00">
+                    <p>Uhr</p>
                 </div>
 
                 <div class="choose3">
                     <input class="MyInput"  type="radio" name="oneChoice">
                     <p>Immer am </p>
-                    <select> name=tage
-                        <option value="1">1</option>
-                        <option value="5">5</option>
-                        <option value="10">10</option>
-                        <option value="15">15</option>
-                        <option value="20">20</option>
-                        <option value="25">25</option>
-                    </select>
+                    <input class="zahl" type="number" max="31" min="1" value="00">
                     <p>des Monats um </p>
-                    <select> name=Stunden2
-                        <option value="00">00</option>
-                        <option value="06">06</option>
-                        <option value="12">12</option>
-                        <option value="18">18</option>
-                    </select>
+                    <input class="zahl" type="number" max="23" min="1" value="00">
                     <p>:</p>
-                    <select> name=minuten3
-                        <option value="00">00</option>
-                        <option value="15">15</option>
-                        <option value="30">30</option>
-                        <option value="45">45</option>
-                    </select>
+                    <input class="zahl" type="number" max="59" min="1" value="00">
+                    <p>Uhr</p>
                 </div>
 
                 <div class="choose4">

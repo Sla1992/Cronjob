@@ -19,6 +19,11 @@ html {
   flex-direction: column;
 }
 
+.title {
+    display: flex;
+    justify-content: center;
+}
+
 .name {
   display: inline-block;
   flex-direction: row;
@@ -34,7 +39,7 @@ html {
 }
 
 .border1{
-  width: 80%;
+  width: 100%;
   height: 90px;
   border-color: lightgray;
   border-style: solid;
@@ -52,7 +57,7 @@ html {
 }
 
 #border2{
-  width: 80%;
+  width: 100%;
   height: 75px;
   border-color: lightgray;
   border-style: solid;
@@ -140,7 +145,7 @@ input#password:focus{
 }
 
 .Border3{
-  width: 80%;
+  width: 100%;
   height: 200px;
   border-color: lightgray;
   border-style: solid;
@@ -156,6 +161,14 @@ input#password:focus{
   display: flex;
   flex-direction: row;
   margin-left: 20px;
+}
+
+.zahl{
+    height: 20px;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2px;
 }
 
 .choose2{
@@ -187,8 +200,9 @@ select{
   margin-right: 10px;
 }
 
+
 .Border4{
-  width: 80%;
+  width: 100%;
   height: 150px;
   border-color: lightgray;
   border-style: solid;
@@ -211,7 +225,7 @@ select{
 }
 
 .Border5 {
-    width: 80%;
+    width: 100%;
     height: 65px;
     border-color: lightgray;
     border-style: solid;
@@ -225,7 +239,7 @@ select{
 
 .endtext{
 
-  width: 80%;
+  width: 100%;
 }
 
 .cron-button {
