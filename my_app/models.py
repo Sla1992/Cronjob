@@ -15,6 +15,11 @@ class Cronjob(models.Model):
 
     password = models.CharField(max_length=30, null=True, default='')
 
+    day = models.IntegerField(default=0)
+
+    hour = models.IntegerField(default=0)
+
+    minute = models.IntegerField(default=0)
 
     def __str__(self):
         return self.title

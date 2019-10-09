@@ -30,7 +30,7 @@
             <div class="border1">
                 <div class="Box1">
                     <input class="name" type="text" id="name" name="Titel" required minlength="4" maxlength="20" placeholder="Titel">
-                    <input class="url" type="url" name="Url" placeholder="http://">
+                    <input class="url" type="url" name="Url" required placeholder="http://">
                 </div>
             </div>
 
@@ -77,35 +77,35 @@
 
             <div class="Border3">
                 <div class="choose1">
-                    <input class="MyInput" type="radio" name="oneChoice" checked>
+                    <input class="MyInput" type="radio" name="oneChoice" id="check1" checked>
                         <p>Alle</p>
-                        <input class="zahl" type="number" max="60" min="1" value="1">
+                        <input class="number" name="minute" type="number" max="60" min="0">
                     <p>Minute/n</p>
                 </div>
 
                 <div class="choose2">
-                    <input class="MyInput" type="radio" name="oneChoice">
+                    <input class="MyInput" type="radio" name="oneChoice" id="check2">
                     <p>Jeden Tag um </p>
-                    <input class="zahl" type="number" max="23" min="0" value="00">
+                    <input class="number" name="hour" type="number" max="23" min="0">
                     <p>:</p>
 
-                    <input class="zahl" type="number" max="59" min="0" value="00">
+                    <input class="number" name="minutetwo" type="number" max="59" min="0">
                     <p>Uhr</p>
                 </div>
 
                 <div class="choose3">
-                    <input class="MyInput"  type="radio" name="oneChoice">
+                    <input class="MyInput"  type="radio" name="oneChoice" id="check3">
                     <p>Immer am </p>
-                    <input class="zahl" type="number" max="31" min="1" value="1">
+                    <input class="number" name="day" type="number" max="31" min="0">
                     <p>des Monats um </p>
-                    <input class="zahl" type="number" max="23" min="0" value="00">
+                    <input class="number" name="hourtwoo" type="number" max="23" min="0">
                     <p>:</p>
-                    <input class="zahl" type="number" max="59" min="0" value="00">
+                    <input class="number" name="minutethree" type="number" max="59" min="0">
                     <p>Uhr</p>
                 </div>
 
                 <div class="choose4">
-                        <input class="MyInput" type="radio" name="oneChoice">
+                        <input class="MyInput" type="radio" name="oneChoice" id="check4">
                         <p>Benutzerdefiniert</p>
                 </div>
             </div>

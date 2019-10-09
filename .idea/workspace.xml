@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a774ff4f-fbf9-4088-bbcd-3d608b10d236" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my_app/migrations/0006_testjob.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_app/migrations/0007_remove_cronjob_auswahl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_app/migrations/0008_auto_20191009_1647.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_app/migrations/0009_auto_20191009_1653.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/migrations/0010_auto_20191009_2118.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/migrations/0011_auto_20191009_2312.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/migrations/0012_auto_20191009_2315.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hello/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hello/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_app/forms.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cronjob.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -190,7 +186,9 @@
       <workItem from="1570518070622" duration="1563000" />
       <workItem from="1570519696633" duration="22077000" />
       <workItem from="1570562737408" duration="5972000" />
-      <workItem from="1570601480674" duration="26467000" />
+      <workItem from="1570601480674" duration="26507000" />
+      <workItem from="1570641365650" duration="5515000" />
+      <workItem from="1570647000678" duration="6268000" />
     </task>
     <task id="LOCAL-00001" summary="CommitForManu">
       <created>1570523742576</created>
