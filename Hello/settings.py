@@ -33,6 +33,8 @@ STATICFILES_DIRS = [
 
 # Application definition
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
