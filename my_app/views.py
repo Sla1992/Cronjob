@@ -1,28 +1,12 @@
 from django.shortcuts import render, redirect
 from my_app.models import Cronjob
+from .models import Friend
 from django.http import HttpResponse
-
-
-friends = [
-    {
-        'person': 'Florian',
-        'lives': 'Basel',
-        'land': 'Schweiz',
-        'birthdate': '27. Februar, 1995'
-    },
-
-    {
-        'person': 'Manuel',
-        'lives': 'Bern',
-        'land': 'Italien',
-        'birthdate': '25 Oktober, 1995'
-    }
-]
 
 
 def home(request):
     context = {
-        'friends': friends
+        'friends': Friend.objects.all()
     }
 
     return render(request, 'cronjobtemplates/home.html', context)

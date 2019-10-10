@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django_crontab',
     'users.apps.UsersConfig',
     'my_app.apps.MyAppConfig',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = 'cronjob-home'
+
+LOGIN_URL = 'login'
