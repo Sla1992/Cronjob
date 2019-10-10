@@ -15,6 +15,8 @@ from django.shortcuts import render, redirect
 #     return render(request, 'index.html', {'form': form})
 from my_app.models import Cronjob
 
+def login(request):
+    render(request, 'base.html')
 
 def index(request):
     if request.method == "POST":

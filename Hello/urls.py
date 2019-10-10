@@ -23,6 +23,7 @@ from my_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name="homepage")
+    path('', admin.site.urls),
+    path('cronjob/', views.index, name="homepage"),
 
 ]
