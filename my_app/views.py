@@ -26,16 +26,17 @@ def index(request):
         authentification = request.POST.get('onoffswitch')
         if authentification is None:
             authentification = False
+        choice1 = request.POST.get('oneChoice')
 
-        if 'check1':
+        if choice1 == '1':
             minute = request.POST.get('minute')
             tablefill.minute = minute
-        if 'check2':
+        if choice1 == '2':
             hour = request.POST.get('hour')
             tablefill.hour = hour
             minute = request.POST.get('minutetwo')
             tablefill.minute = minute
-        if 'check3':
+        if choice1 == '3':
             day = request.POST.get('day')
             tablefill.day = day
             hour = request.POST.get('hourtwo')
@@ -48,8 +49,6 @@ def index(request):
         tablefill.username = username
         tablefill.password = password
         tablefill.authentification = authentification
-
-
 
         tablefill.save()
         return render(request, 'index.html')
