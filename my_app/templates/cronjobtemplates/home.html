@@ -1,0 +1,15 @@
+{% extends "cronjobtemplates/base.html" %}
+{% block content %}
+{% for friend in friends %}
+    <article class="media content-section">
+      <div class="media-body">
+        <div class="article-metadata">
+          <a class="mr-2" href="#">{{ friend.person }}</a>
+          <small class="text-muted">kommt aus {{ friend.lives }}</small>
+        </div>
+        <h2><a class="article-title" href="#">Geburtsland: {{ friend.land }}</a></h2>
+        <p class="article-content">Geboren am {{ friend.birthdate }}</p>
+      </div>
+    </article>
+{% endfor %}
+{% endblock content %}

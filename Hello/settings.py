@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_crontab',
-    'my_app'
+    'users.apps.UsersConfig',
+    'my_app.apps.MyAppConfig',
 ]
 
 MIDDLEWARE = [

@@ -17,13 +17,16 @@ from django.contrib import admin
 from django.urls import path
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from my_app import views
+from users import views as user_views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', admin.site.urls),
-    path('cronjob/', views.index, name="homepage"),
+    path('register/', user_views.register, name='register'),
+    path('', include('my_app.urls')),
+
+
 
 ]

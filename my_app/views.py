@@ -1,22 +1,40 @@
-import value as value
 from django.shortcuts import render, redirect
-
-
-# Create your views here.
-
-
-# def index(request):
-#     if request.method == "POST":
-#         form = CronjobForm(request.POST)
-#         if form.is_valid():
-#             form.save()
-#
-#     form = CronjobForm()
-#     return render(request, 'index.html', {'form': form})
 from my_app.models import Cronjob
+from django.http import HttpResponse
+
+
+friends = [
+    {
+        'person': 'Florian',
+        'lives': 'Basel',
+        'land': 'Schweiz',
+        'birthdate': '27. Februar, 1995'
+    },
+
+    {
+        'person': 'Manuel',
+        'lives': 'Bern',
+        'land': 'Italien',
+        'birthdate': '25 Oktober, 1995'
+    }
+]
+
+
+def home(request):
+    context = {
+        'friends': friends
+    }
+
+    return render(request, 'cronjobtemplates/home.html', context)
+
+
+def about(request):
+    return render(request, 'cronjobtemplates/about.html', {'title': 'About'})
+
 
 def login(request):
     render(request, 'base.html')
+
 
 def index(request):
     if request.method == "POST":
@@ -56,6 +74,10 @@ def index(request):
         return render(request, 'index.html')
     else:
         return render(request, 'index.html')
+
+
+
+
 
 
 
