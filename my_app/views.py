@@ -21,6 +21,10 @@ def login(request):
     return render(request, 'base.html')
 
 
+def crontable(request):
+    all_records = Cronjob.objects.all
+    return render(request, 'cronjobtemplates/crontable.html', {'all_records': all_records})
+
 
 def index(request):
     if request.method == "POST":
@@ -37,11 +41,13 @@ def index(request):
         if choice1 == '1':
             minute = request.POST.get('minute')
             tablefill.minute = minute
+            tablefill.cronjob = minute + " " + " * * * *"
         if choice1 == '2':
             hour = request.POST.get('hour')
             tablefill.hour = hour
             minute = request.POST.get('minutetwo')
             tablefill.minute = minute
+            tablefill.cronjob = minute + " " + hour + " * * *"
         if choice1 == '3':
             day = request.POST.get('day')
             tablefill.day = day
@@ -49,12 +55,14 @@ def index(request):
             tablefill.hour = hour
             minute = request.POST.get('minutethree')
             tablefill.minute = minute
+            tablefill.cronjob = minute + " " + hour + " " + day + " * *"
 
         tablefill.title = title
         tablefill.url = url
         tablefill.username = username
         tablefill.password = password
         tablefill.authentification = authentification
+
 
         tablefill.save()
         return render(request, 'cronjobtemplates/cronjob.html')

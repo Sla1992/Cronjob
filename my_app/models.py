@@ -16,11 +16,16 @@ class Cronjob(models.Model):
 
     password = models.CharField(max_length=30, null=True, default='')
 
-    day = models.IntegerField(default=0)
+    day = models.CharField(max_length=3, default=0)
 
-    hour = models.IntegerField(default=0)
+    hour = models.CharField(max_length=3, default=0)
 
-    minute = models.IntegerField(default=0)
+    minute = models.CharField(max_length=3, default=0)
+
+    cronjob = models.CharField(max_length=5,null=False,default="* * * * *")
+
+    class Meta:
+        ordering = ['-id']
 
     def __str__(self):
         return self.title

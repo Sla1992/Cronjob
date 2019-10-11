@@ -1,14 +1,15 @@
 {% extends "cronjobtemplates/base.html" %}
 {% block content %}
-{% for neuigkeit in Neuigkeiten %}
+{% for neuigkeit in neuigkeiten %}
     <article class="media content-section">
+        <img class="rounded-circle article-img" src="{{ neuigkeit.user.profile.image.url }}">
       <div class="media-body">
         <div class="article-metadata">
-          <a class="mr-2" href="#">{{ neuigkeiten.title }}</a>
-          <small class="text-muted">{{ neuigkeiten.user }}</small>
+          <a class="mr-2" href="#">{{ neuigkeit.title }}</a>
+          <small class="text-muted">geschrieben von: {{ neuigkeit.user }}</small>
         </div>
-        <h2><a class="article-title" href="#">{{ neuigkeiten.text }}</a></h2>
-        <p class="article-content">{{ neuigkeiten.added }}</p>
+        <h4><a class="article-title" href="#">{{ neuigkeit.text }}</a></h4>
+        <p class="article-content">Hinzugefügt am: {{ neuigkeit.added|date:"d. F, Y, H:i" }} Uhr</p>
       </div>
     </article>
 {% endfor %}
