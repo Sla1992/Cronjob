@@ -5,10 +5,10 @@
         <img class="rounded-circle article-img" src="{{ neuigkeit.user.profile.image.url }}">
       <div class="media-body">
         <div class="article-metadata">
-          <a class="mr-2" href="#">{{ neuigkeit.title }}</a>
-          <small class="text-muted">geschrieben von: {{ neuigkeit.user }}</small>
+          <h2>{{ neuigkeit.title }}</h2>
+          <small class="text-muted">Erstellt von: {{ neuigkeit.user }}</small>
         </div>
-        <h4><a class="article-title" href="#">{{ neuigkeit.text }}</a></h4>
+        <h5>{{ neuigkeit.text }}</h5>
         <p class="article-content">Hinzugefügt am: {{ neuigkeit.added|date:"d. F, Y, H:i" }} Uhr</p>
       </div>
     </article>

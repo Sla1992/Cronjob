@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 from my_app.models import Cronjob
 from .models import Neuigkeiten
@@ -22,13 +23,14 @@ def login(request):
 
 
 def crontable(request):
-    all_records = Cronjob.objects.all
-    return render(request, 'cronjobtemplates/crontable.html', {'all_records': all_records})
+    all_user_records = Cronjob.objects.filter(user_id=request.user.id)
+    return render(request, 'cronjobtemplates/crontable.html', {'all_records': all_user_records})
 
 
 def index(request):
     if request.method == "POST":
         tablefill = Cronjob()
+        tablefill.user_id = request.user.id
         title = request.POST.get('Titel')
         url = request.POST.get('Url')
         username = request.POST.get('Username')
