@@ -1,12 +1,13 @@
 from django.shortcuts import render, redirect
 from my_app.models import Cronjob
-from .models import Friend
+from .models import Neuigkeiten
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 
 
 def home(request):
     context = {
-        'friends': Friend.objects.all()
+        'neuigkeiten': Neuigkeiten.objects.all()
     }
 
     return render(request, 'cronjobtemplates/home.html', context)
@@ -17,7 +18,8 @@ def about(request):
 
 
 def login(request):
-    render(request, 'base.html')
+    return render(request, 'base.html')
+
 
 
 def index(request):
@@ -55,9 +57,9 @@ def index(request):
         tablefill.authentification = authentification
 
         tablefill.save()
-        return render(request, 'index.html')
+        return render(request, 'cronjobtemplates/cronjob.html')
     else:
-        return render(request, 'index.html')
+        return render(request, 'cronjobtemplates/cronjob.html')
 
 
 

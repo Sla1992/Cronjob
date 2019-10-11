@@ -1,14 +1,14 @@
 {% extends "cronjobtemplates/base.html" %}
 {% block content %}
-{% for friend in friends %}
+{% for neuigkeit in Neuigkeiten %}
     <article class="media content-section">
       <div class="media-body">
         <div class="article-metadata">
-          <a class="mr-2" href="#">{{ friend.person }}</a>
-          <small class="text-muted">kommt aus {{ friend.lives }}</small>
+          <a class="mr-2" href="#">{{ neuigkeiten.title }}</a>
+          <small class="text-muted">{{ neuigkeiten.user }}</small>
         </div>
-        <h2><a class="article-title" href="#">Geburtsland: {{ friend.land }}</a></h2>
-        <p class="article-content">Geboren am {{ friend.birthdate }}</p>
+        <h2><a class="article-title" href="#">{{ neuigkeiten.text }}</a></h2>
+        <p class="article-content">{{ neuigkeiten.added }}</p>
       </div>
     </article>
 {% endfor %}
