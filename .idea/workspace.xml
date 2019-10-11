@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a774ff4f-fbf9-4088-bbcd-3d608b10d236" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my_app/migrations/0011_auto_20191011_1437.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_app/migrations/0012_auto_20191011_1438.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_app/templates/cronjobtemplates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/templates/cronjobtemplates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_app/templates/cronjobtemplates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/templates/cronjobtemplates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_app/templates/cronjobtemplates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/templates/cronjobtemplates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +180,7 @@
       <workItem from="1570687505911" duration="29110000" />
       <workItem from="1570725759683" duration="15760000" />
       <workItem from="1570746292451" duration="2142000" />
-      <workItem from="1570773576250" duration="26500000" />
+      <workItem from="1570773576250" duration="27546000" />
     </task>
     <task id="LOCAL-00001" summary="CommitForManu">
       <created>1570523742576</created>
