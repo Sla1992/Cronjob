@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a774ff4f-fbf9-4088-bbcd-3d608b10d236" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -180,7 +179,7 @@
       <workItem from="1570687505911" duration="29110000" />
       <workItem from="1570725759683" duration="15760000" />
       <workItem from="1570746292451" duration="2142000" />
-      <workItem from="1570773576250" duration="27546000" />
+      <workItem from="1570773576250" duration="28673000" />
     </task>
     <task id="LOCAL-00001" summary="CommitForManu">
       <created>1570523742576</created>
